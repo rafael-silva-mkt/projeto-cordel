@@ -60,6 +60,9 @@ main{
 .normal {
     padding: 30px 0px 20px 25px;
     background-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
 }
 
 /* --------------- fim normal --------------- */
