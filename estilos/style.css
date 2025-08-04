@@ -1,38 +1,35 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
 
-/* --------------- variaveis --------------- */
 :root{
-    --font-cabecalho: 'Passion One';
-    --font-estrofe: 'Sriracha';
+    --font01: 'Bebas Neue';
+    --font02: 'Permanent Marker';
+    --font03: Arial, Helvetica, sans-serif;
 }
 
-/* --------------- fim variaives --------------- */
-
-/* --------------- header --------------- */
+/*===============# HEADER #=============== */
 
 header{
     background-color: black;
+    color: white;
     text-align: center;
-    height: 200px;
 }
 header > h1{
-    font-family: var(--font-cabecalho);
-    color: white;
-    font-size: 5em;
-    margin: auto;
-    padding-top: 50px;
+    font-family: var(--font01);
     font-variant: small-caps;
+    font-size: clamp(40px, 8vw, 80px);
+    padding-top: 40px;
 }
 header > p{
-    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
     color: white;
+    font-family: var(--font03);
 }
 header > p > a{
     text-decoration: none;
@@ -42,67 +39,54 @@ header > p > a{
 header > p > a:hover{
     text-decoration: underline;
 }
-/* --------------- fim header --------------- */
+/*===============# FIM #===============*/
 
-/* --------------- main --------------- */
+/*===============# SECTION #===============*/
 
-main{
-    font-family: var(--font-estrofe);
-    background-color: white;
-    font-size: 1.6em;
+section{
+    background-color: gray;
+    padding-left: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section > p{
+    font-family: var(--font02);
+    font-size: clamp(18px, 3vw, 30px);
     line-height: 2em;
 }
+/*===============# FIM #===============*/
 
-/* --------------- fim main --------------- */
+/*===============# SECTION = "NORMAL" #===============*/
 
-/* --------------- class= normal --------------- */
-
-.normal {
-    padding: 30px 0px 20px 25px;
+section.normal{
     background-color: white;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
 }
+section.normal .espaco{
+    padding-bottom: 10vw;
+}
+/*===============# FIM #===============*/
 
-/* --------------- fim normal --------------- */
+/*===============# SECTION = "IMAGEM" #===============*/
 
-/* --------------- class= imagem --------------- */
-
-.imagem > p{
+section.imagem{
+    background: right center/cover fixed;
+}
+section.imagem > p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0.603);
     color: white;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 5%;
-}
-
-/* --------------- fim imagem --------------- */
-
-#img001{
-    background: url(imagens/background001.jpg) right center/cover no-repeat fixed;
-}
-
-/* --------------- fim img001 --------------- */
-
-/* --------------- img002 --------------- */
-
-#img002{
-    background: url(imagens/background002.jpg) right center/cover no-repeat fixed;
-}
-
-/* --------------- img002 --------------- */
-
-/* --------------- footer --------------- */
-
-footer{
-    background-color: black;
-    color: white;
-    font-family: system-ui, sans-serif;
-    text-align: center;
     padding: 10px;
-    font-weight: bold;
 }
 
-/* --------------- fim footer --------------- */
+/*===============# FIM #===============*/
+
+/*===============# SECTION id="img"#===============*/
+
+#img01{
+    background-image: url(imagens/background001.jpg);
+}
+#img02{
+    background-image: url(imagens/background002.jpg);
+}
+
+/*===============# FIM #===============*/
