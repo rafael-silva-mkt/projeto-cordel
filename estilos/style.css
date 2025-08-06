@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor01);
+}
+
+/*               # root #               */
+
+:root{
+    --font-hallowen: 'Creepster';
+    --font-escrita: 'Henny Penny';
+
+    --cor01: #F29F05;
+    --cor02: #F27405;
+    --cor03: #D93D04;
+    --cor04: #730202;
+    --cor05: #0D0D0D;
+}
+
+/*               # fim #               */
+
+/*               # header #               */
+
+header{
+    position: relative;
+    background-color: black;
+    color: var(--cor03);
+    font-family: var(--font-hallowen);
+    height: clamp(130px, 15vw, 300px);
+    width: 100%;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header > #container > h1{
+    font-size: clamp(2.3em, 5vw, 4em);
+}
+header > #container > p{
+    font-size: clamp(1.3em, 2vw, 2.3em);
+    text-align: center;
+}
+#img01{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 60%;
+}
+#img02{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 60%;
+}
+
+/*               # fim #               */
+
+/*               # main #               */
+
+main{
+    font-family: var(--font-escrita);
+    font-size: clamp(1.3em, 2vw, 2.5em);
+    line-height: 2em;
+    background-color: var(--cor01);
+    max-width: 1280px;
+    margin: auto;
+}
+
+/*               # fim #               */
+
+/*               # section=normal #               */
+
+section.normal{
+    background-color: white;
+}
+section.normal > p{
+    padding: 40px;
+}
+/*               # fim #               */
+
+/*               # section=imagem #               */
+
+section.imagem{
+    padding: 40px;
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    padding: 5px;
+}
+#img03{
+    background: url('imagens/mansao-assombrada1920.jpg') center center/cover no-repeat fixed;
+}
+#img04{
+    background: url('imagens/lua-cheia1920.jpg') center center/cover no-repeat fixed;
+}
+/*               # fim #               */
