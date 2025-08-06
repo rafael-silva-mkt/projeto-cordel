@@ -105,12 +105,12 @@ section.imagem > p{
 }
 #img03{
     background: url('imagens/mansao-assombrada1920.jpg') center center/cover no-repeat fixed;
-    min-height: 250px;
-    height: 98vh;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
 }
 #img04{
     background: url('imagens/lua-cheia1920.jpg') center center/cover no-repeat fixed;
-    min-height: 250px;
-    height: 98vh;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
 }
 /*               # fim #               */
